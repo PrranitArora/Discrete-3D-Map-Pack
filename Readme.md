@@ -2,7 +2,15 @@
 
 Creating detailed 3D environments for games / experiences in virtual reality is a labor intensive process, especially when trying to accurately model real life areas. Using 360-degree cameras with some sort of distance gauge is a solution, but this setup is clunky, hard to keep stable and can bring unwanted attention from nearby people, ruining the map. By packaging the sensors discretely in a backpack, only having small holes / one-way tints cut out for cameras and other sensors, you can create discrete real-time modeling. * this would require some sort of lidar setup, covering front and back. This setup will have an appendage that extends out front as well (wires hidden under clothes). TBD: location to attach front appendage? belt buckle? backpack shoulder strap? Applications: - creating virtual reality experiences - creating 3d tours of places - reliving places you visit - can be used for advertising real life experiences - potential safety related applications: using computer vision to analyze all around you in real time
 
+# Bill of Materials
 
+# Internal Frame CAD 
+
+# Software 
+
+# Construction Process
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Journal: 
 
 #Initial Render
@@ -36,7 +44,14 @@ For open spaces, the process is similar and depends on how open the space is (mi
 # Internal Frame
 <img width="872" height="642" alt="image" src="https://github.com/user-attachments/assets/b80d6c4a-376b-44fc-9dfb-f54ccde4c1a4" />
 
+
 I need to make sure the structure of the system stays constant and as still as possible in the backpack. My idea is to create a 3d printed frame that screws onto the backpacks fabric and stays tight.
 I want all the measurement units to connect onto the same rigid body so that they are more consistent to each other in measurements => a more consistent SLAM performance.
 
-I will also have to plan where to keep the electronics for the system. Since I am using a backpack, I may be able to hook up my PC to the components, which would be great for the processing power required for the real-time algorithms. If I can't plan this spatially / the frame would press against my computer screen, then I plan to use a raspberry pi to manage storing all the measurements, which I would then use a custom software program to compute and then render into a 3d model file.
+I will also have to plan where to keep the electronics for the system. Since I am using a backpack, I may be able to hook up my PC to the components, which would be great for the processing power 
+
+
+
+# References
+
+required for the real-time algorithms. If I can't plan this spatially / the frame would press against my computer screen, then I plan to use a raspberry pi to manage storing all the measurements, which I would then use a custom software program to compute and then render into a 3d model file.
