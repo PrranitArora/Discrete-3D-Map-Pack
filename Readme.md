@@ -50,8 +50,8 @@ I want all the measurement units to connect onto the same rigid body so that the
 
 I will also have to plan where to keep the electronics for the system. Since I am using a backpack, I may be able to hook up my PC to the components, which would be great for the processing power 
 
-
+required for the real-time algorithms. If I can't plan this spatially / the frame would press against my computer screen, then I plan to use a raspberry pi to manage storing all the measurements, which I would then use a custom software program to compute and then render into a 3d model file.
 
 # References
 
-required for the real-time algorithms. If I can't plan this spatially / the frame would press against my computer screen, then I plan to use a raspberry pi to manage storing all the measurements, which I would then use a custom software program to compute and then render into a 3d model file.
+
