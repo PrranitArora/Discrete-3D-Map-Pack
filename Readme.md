@@ -8,7 +8,7 @@ Creating detailed 3D environments for games / experiences in virtual reality is 
 - IMU (TBD)
 - Raspberry Pi 5 (TBD)
 - 3D Printed Frame Components (TBD)
-- 2 Cameras (TBD)
+- 3 Cameras (TBD)
 - Tinted Acrylic Panel (TBD)  
 
 # Internal Frame CAD 
@@ -58,6 +58,18 @@ I want all the measurement units to connect onto the same rigid body so that the
 I will also have to plan where to keep the electronics for the system. Since I am using a backpack, I may be able to hook up my PC to the components, which would be great for the processing power 
 
 required for the real-time algorithms. If I can't plan this spatially / the frame would press against my computer screen, then I plan to use a raspberry pi to manage storing all the measurements, which I would then use a custom software program to compute and then render into a 3d model file.
+
+# Considering Cameras
+
+The cameras technically only need 90 degrees of FOV each to work together for all the mapping that we need
+The higher resolution they are, the better results we can expect. I don't think that for the initial version that I create, I will utilize very high resolution cameras. For the proof of concept, I think that anything expensive will have diminishing returns, and that the budget can be spent better!
+I currently plan to get 3 of these to cover the entire FOV (76 degrees each)
+
+
+<img width="1913" height="768" alt="image" src="https://github.com/user-attachments/assets/94efc138-6386-479a-99cc-b381ffa2158c" />
+
+
+I also plan to get webcams specifically, because they tend to have higher FOVS
 
 # References
 
