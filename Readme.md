@@ -17,7 +17,11 @@ Applications: - creating virtual reality experiences - creating 3d tours of plac
   
 - 3 Web Cameras
   
-- Tinted Acrylic Panel 
+- Tinted Acrylic Panel
+
+- Spool of Insulated Wire
+
+- Heatset Inserts and Screws
 
 
 
