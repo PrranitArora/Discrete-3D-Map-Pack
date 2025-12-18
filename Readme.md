@@ -27,6 +27,14 @@ Applications: - creating virtual reality experiences - creating 3d tours of plac
 
 # Internal Frame CAD 
 
+<img width="622" height="537" alt="image" src="https://github.com/user-attachments/assets/bbea419f-c70a-4374-976b-6d19cf34c172" />
+
+<img width="491" height="501" alt="image" src="https://github.com/user-attachments/assets/90583ab8-279f-4b18-b50f-eab571d75a88" />
+
+<img width="447" height="377" alt="image" src="https://github.com/user-attachments/assets/db4d08ee-d9c7-4640-815a-fe3cbb750d9b" />
+
+<img width="705" height="512" alt="image" src="https://github.com/user-attachments/assets/3a2b61b1-0caa-4d8d-8ff8-6b8904bc6bb4" />
+
 # Software 
 
 # Construction Process
