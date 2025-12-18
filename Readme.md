@@ -5,22 +5,21 @@ Applications: - creating virtual reality experiences - creating 3d tours of plac
 
 # Bill of Materials
 
-- Backpack (specific model TBD)
+- Backpack 
   
-- LiDAR Sensor (TBD
+- LiDAR Sensor 
   
-- IMU (TBD)
+- IMU 
   
-- Raspberry Pi 5 (TBD)
+- Raspberry Pi 5 
   
-- 3D Printed Frame Components (TBD)
+- 3D Printed Frame Components 
   
-- 3 Cameras https://www.walmart.com/ip/RONY-1080P-HD-Webcam-Microphone-Noise-Reduction-Streaming-Computer-Web-Camera-Desktop-Laptop-PC-Autofocus-USB-Camera-Video-Calling-Zoom-Meeting/5027785199?athcpid=5027785199&athpgid=AthenaItempage&athcgid=null&athznid=deals&athieid=null&athstid=CS020&athguid=afEUBFKZMhSVPDMTfaVItPJ_wufvQ09z98S8&athancid=1946595670&athena=true&athbdg=L1800
+- 3 Web Cameras
   
-- Tinted Acrylic Panel (TBD)
+- Tinted Acrylic Panel 
 
-Total Cost: 
-(TBD) 
+
 
 # Internal Frame CAD 
 
@@ -28,59 +27,6 @@ Total Cost:
 
 # Construction Process
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Journal: 
-
-#Initial Render
-<img width="1667" height="695" alt="image" src="https://github.com/user-attachments/assets/99518934-c55e-40c5-940a-fb22883ea43c" />
-
-Thoughts: 
-for measuring distances, I decided that LiDAR will be the most efficient.
-I skimmed a few research papers about SLAM (Simultaneous Localization and Mapping) and found that along LiDAR, I should also have an IMU and a camera system.
-
-My main concern currently is the packaging + discreteness of the system.
-
-My current solution to this is a 3d printed frame that is screwed on to the fabric of the backpack in multiple points to hold it steady.
-
-I also want some sort of tinted acrylic that the LiDAR lasers can pass through. The cameras will have holes that they poke out of (attached to the frame as well)
-
-
-# Walking Algorithm
-<img width="1731" height="578" alt="image" src="https://github.com/user-attachments/assets/709849b9-bcf1-4674-8f2f-7c19598ea4b0" />
-
-A major consideration is whether the system needs frontal and rear vision.
-
-I analyzed a few different scenarios and found that having frontal vision is redundant for most scenarios.
-
-For most enclosed spaces, mapping just behind you requires minimal more walking.
-
-This means that the algorithm for walking in enclosed spaces should be to finish the path and then turn around and walk enough for the camera's pan to cover the edge of the desired space.
-
-For open spaces, the process is similar and depends on how open the space is (might need to trace the perimeter of the 'end' of the path region. But since we don't have to account for objects past the LiDAR's range, open spaces just require a walk around the (perimeter - the range) * of the camera + LiDAR system..
-
-
-# Internal Frame
-<img width="872" height="642" alt="image" src="https://github.com/user-attachments/assets/b80d6c4a-376b-44fc-9dfb-f54ccde4c1a4" />
-
-
-I need to make sure the structure of the system stays constant and as still as possible in the backpack. My idea is to create a 3d printed frame that screws onto the backpacks fabric and stays tight.
-I want all the measurement units to connect onto the same rigid body so that they are more consistent to each other in measurements => a more consistent SLAM performance.
-
-I will also have to plan where to keep the electronics for the system. Since I am using a backpack, I may be able to hook up my PC to the components, which would be great for the processing power 
-
-required for the real-time algorithms. If I can't plan this spatially / the frame would press against my computer screen, then I plan to use a raspberry pi to manage storing all the measurements, which I would then use a custom software program to compute and then render into a 3d model file.
-
-# Considering Cameras
-
-The cameras technically only need 90 degrees of FOV each to work together for all the mapping that we need
-The higher resolution they are, the better results we can expect. I don't think that for the initial version that I create, I will utilize very high resolution cameras. For the proof of concept, I think that anything expensive will have diminishing returns, and that the budget can be spent better!
-I currently plan to get 3 of these to cover the entire FOV (76 degrees each)
-
-
-<img width="1913" height="768" alt="image" src="https://github.com/user-attachments/assets/94efc138-6386-479a-99cc-b381ffa2158c" />
-
-
-I also plan to get webcams specifically, because they tend to have higher FOVS
 
 # References
 
